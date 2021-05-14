@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00792DEE2648C88E004D9BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00792DED2648C88E004D9BA3 /* AppDelegate.swift */; };
+		00792DF02648C88E004D9BA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00792DEF2648C88E004D9BA3 /* SceneDelegate.swift */; };
+		00792DF52648C88E004D9BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00792DF32648C88E004D9BA3 /* Main.storyboard */; };
+		00792DF72648C892004D9BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00792DF62648C892004D9BA3 /* Assets.xcassets */; };
+		00792DFA2648C892004D9BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00792DF82648C892004D9BA3 /* LaunchScreen.storyboard */; };
+		00792E052648C892004D9BA3 /* PeacefulSpringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00792E042648C892004D9BA3 /* PeacefulSpringsTests.swift */; };
+		00792E102648C892004D9BA3 /* PeacefulSpringsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00792E0F2648C892004D9BA3 /* PeacefulSpringsUITests.swift */; };
+		00BB2AEF264CDC8B00F3FCE6 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2AEE264CDC8B00F3FCE6 /* Signup.swift */; };
+		00BB2AF9264D03A200F3FCE6 /* ProfileImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2AF8264D03A200F3FCE6 /* ProfileImg.swift */; };
+		00BB2AFB264D070700F3FCE6 /* ProfileImgDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2AFA264D070700F3FCE6 /* ProfileImgDelegate.swift */; };
+		00BB2AFD264D232E00F3FCE6 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2AFC264D232E00F3FCE6 /* Text.swift */; };
+		00BB2AFF264D488900F3FCE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2AFE264D488900F3FCE6 /* User.swift */; };
+		00BB2B01264D78FD00F3FCE6 /* Dictionarize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2B00264D78FC00F3FCE6 /* Dictionarize.swift */; };
+		00BB2B05264DEC1000F3FCE6 /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B04264DEC1000F3FCE6 /* server.js */; };
+		00BB2B08264DEC4000F3FCE6 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B07264DEC4000F3FCE6 /* index.js */; };
+		00BB2B1E264DEC4D00F3FCE6 /* mysqlPool.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B0B264DEC4D00F3FCE6 /* mysqlPool.js */; };
+		00BB2B21264DEC4D00F3FCE6 /* appUserController.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B0F264DEC4D00F3FCE6 /* appUserController.js */; };
+		00BB2B23264DEC4D00F3FCE6 /* appTextController.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B11264DEC4D00F3FCE6 /* appTextController.js */; };
+		00BB2B2A264DEC4D00F3FCE6 /* DB_connection.js in Resources */ = {isa = PBXBuildFile; fileRef = 00BB2B1D264DEC4D00F3FCE6 /* DB_connection.js */; };
+		00C40A5F2649042C00C511E9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C40A4C264903A600C511E9 /* Alamofire.framework */; };
+		00C40A602649042C00C511E9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00C40A4C264903A600C511E9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00C40FB42649219F00C511E9 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C40FB32649219F00C511E9 /* Http.swift */; };
+		00C40FC8264927F600C511E9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C40FC7264927F600C511E9 /* ChatViewController.swift */; };
+		00C40FDE264A06DF00C511E9 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 00C40FDD264A06DF00C511E9 /* images */; };
+		00C40FEA264A86C700C511E9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C40FE9264A86C700C511E9 /* Message.swift */; };
+		00C40FF1264A872600C511E9 /* MessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C40FF0264A872600C511E9 /* MessageDelegate.swift */; };
+		00C4101C264CA66A00C511E9 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4101B264CA66A00C511E9 /* LoginController.swift */; };
+		00C4102E264CB5F500C511E9 /* PInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4102D264CB5F500C511E9 /* PInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00792E012648C892004D9BA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00792DE22648C88E004D9BA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00792DE92648C88E004D9BA3;
+			remoteInfo = PeacefulSprings;
+		};
+		00792E0C2648C892004D9BA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00792DE22648C88E004D9BA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00792DE92648C88E004D9BA3;
+			remoteInfo = PeacefulSprings;
+		};
+		00C40A4B264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		00C40A4D264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		00C40A4F264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		00C40A51264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		00C40A53264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		00C40A55264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		00C40A57264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		00C40A59264903A600C511E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 31293065263E17D600473CEA;
+			remoteInfo = "Alamofire watchOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00C40A612649042D00C511E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00C40A602649042C00C511E9 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00792DEA2648C88E004D9BA3 /* PeacefulSprings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeacefulSprings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00792DED2648C88E004D9BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00792DEF2648C88E004D9BA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00792DF42648C88E004D9BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00792DF62648C892004D9BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00792DF92648C892004D9BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00792DFB2648C892004D9BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00792E002648C892004D9BA3 /* PeacefulSpringsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacefulSpringsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00792E042648C892004D9BA3 /* PeacefulSpringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeacefulSpringsTests.swift; sourceTree = "<group>"; };
+		00792E062648C892004D9BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00792E0B2648C892004D9BA3 /* PeacefulSpringsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeacefulSpringsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00792E0F2648C892004D9BA3 /* PeacefulSpringsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeacefulSpringsUITests.swift; sourceTree = "<group>"; };
+		00792E112648C892004D9BA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BB2AEE264CDC8B00F3FCE6 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		00BB2AF8264D03A200F3FCE6 /* ProfileImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImg.swift; sourceTree = "<group>"; };
+		00BB2AFA264D070700F3FCE6 /* ProfileImgDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgDelegate.swift; sourceTree = "<group>"; };
+		00BB2AFC264D232E00F3FCE6 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		00BB2AFE264D488900F3FCE6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		00BB2B00264D78FC00F3FCE6 /* Dictionarize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionarize.swift; sourceTree = "<group>"; };
+		00BB2B04264DEC1000F3FCE6 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = server.js; sourceTree = "<group>"; };
+		00BB2B07264DEC4000F3FCE6 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		00BB2B0B264DEC4D00F3FCE6 /* mysqlPool.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mysqlPool.js; sourceTree = "<group>"; };
+		00BB2B0F264DEC4D00F3FCE6 /* appUserController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = appUserController.js; sourceTree = "<group>"; };
+		00BB2B11264DEC4D00F3FCE6 /* appTextController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = appTextController.js; sourceTree = "<group>"; };
+		00BB2B1D264DEC4D00F3FCE6 /* DB_connection.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = DB_connection.js; sourceTree = "<group>"; };
+		00C40A38264903A500C511E9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		00C40FB32649219F00C511E9 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		00C40FC7264927F600C511E9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		00C40FDD264A06DF00C511E9 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		00C40FE9264A86C700C511E9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		00C40FF0264A872600C511E9 /* MessageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDelegate.swift; sourceTree = "<group>"; };
+		00C4101B264CA66A00C511E9 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		00C4102D264CB5F500C511E9 /* PInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00792DE72648C88E004D9BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C40A5F2649042C00C511E9 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792DFD2648C892004D9BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792E082648C892004D9BA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00792DE12648C88E004D9BA3 = {
+			isa = PBXGroup;
+			children = (
+				00792DEC2648C88E004D9BA3 /* PeacefulSprings */,
+				00792E032648C892004D9BA3 /* PeacefulSpringsTests */,
+				00792E0E2648C892004D9BA3 /* PeacefulSpringsUITests */,
+				00792DEB2648C88E004D9BA3 /* Products */,
+				00C40A5E2649042C00C511E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00792DEB2648C88E004D9BA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00792DEA2648C88E004D9BA3 /* PeacefulSprings.app */,
+				00792E002648C892004D9BA3 /* PeacefulSpringsTests.xctest */,
+				00792E0B2648C892004D9BA3 /* PeacefulSpringsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00792DEC2648C88E004D9BA3 /* PeacefulSprings */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B03264DE94C00F3FCE6 /* server */,
+				00BB2B02264DE5D900F3FCE6 /* protocol */,
+				00C41006264BA6E900C511E9 /* modal */,
+				00C40FED264A86D900C511E9 /* delegate */,
+				00C40FDD264A06DF00C511E9 /* images */,
+				00C40FD4264A05CA00C511E9 /* view */,
+				00792DED2648C88E004D9BA3 /* AppDelegate.swift */,
+				00792DEF2648C88E004D9BA3 /* SceneDelegate.swift */,
+				00C40A38264903A500C511E9 /* Alamofire.xcodeproj */,
+				00792DF32648C88E004D9BA3 /* Main.storyboard */,
+				00792DF62648C892004D9BA3 /* Assets.xcassets */,
+				00792DF82648C892004D9BA3 /* LaunchScreen.storyboard */,
+				00792DFB2648C892004D9BA3 /* Info.plist */,
+				00C40FC7264927F600C511E9 /* ChatViewController.swift */,
+				00C4101B264CA66A00C511E9 /* LoginController.swift */,
+				00C4102D264CB5F500C511E9 /* PInfo.swift */,
+				00BB2AEE264CDC8B00F3FCE6 /* Signup.swift */,
+				00BB2AF8264D03A200F3FCE6 /* ProfileImg.swift */,
+			);
+			path = PeacefulSprings;
+			sourceTree = "<group>";
+		};
+		00792E032648C892004D9BA3 /* PeacefulSpringsTests */ = {
+			isa = PBXGroup;
+			children = (
+				00792E042648C892004D9BA3 /* PeacefulSpringsTests.swift */,
+				00792E062648C892004D9BA3 /* Info.plist */,
+			);
+			path = PeacefulSpringsTests;
+			sourceTree = "<group>";
+		};
+		00792E0E2648C892004D9BA3 /* PeacefulSpringsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00792E0F2648C892004D9BA3 /* PeacefulSpringsUITests.swift */,
+				00792E112648C892004D9BA3 /* Info.plist */,
+			);
+			path = PeacefulSpringsUITests;
+			sourceTree = "<group>";
+		};
+		00BB2B02264DE5D900F3FCE6 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B00264D78FC00F3FCE6 /* Dictionarize.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		00BB2B03264DE94C00F3FCE6 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B09264DEC4D00F3FCE6 /* database */,
+				00BB2B06264DEC4000F3FCE6 /* router */,
+				00BB2B04264DEC1000F3FCE6 /* server.js */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		00BB2B06264DEC4000F3FCE6 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B07264DEC4000F3FCE6 /* index.js */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		00BB2B09264DEC4D00F3FCE6 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B0A264DEC4D00F3FCE6 /* DBpool */,
+				00BB2B0C264DEC4D00F3FCE6 /* controller */,
+				00BB2B1C264DEC4D00F3FCE6 /* DBconfig */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		00BB2B0A264DEC4D00F3FCE6 /* DBpool */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B0B264DEC4D00F3FCE6 /* mysqlPool.js */,
+			);
+			path = DBpool;
+			sourceTree = "<group>";
+		};
+		00BB2B0C264DEC4D00F3FCE6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B0F264DEC4D00F3FCE6 /* appUserController.js */,
+				00BB2B11264DEC4D00F3FCE6 /* appTextController.js */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		00BB2B1C264DEC4D00F3FCE6 /* DBconfig */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2B1D264DEC4D00F3FCE6 /* DB_connection.js */,
+			);
+			path = DBconfig;
+			sourceTree = "<group>";
+		};
+		00C40A39264903A500C511E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C40A4C264903A600C511E9 /* Alamofire.framework */,
+				00C40A4E264903A600C511E9 /* Alamofire iOS Tests.xctest */,
+				00C40A50264903A600C511E9 /* Alamofire.framework */,
+				00C40A52264903A600C511E9 /* Alamofire macOS Tests.xctest */,
+				00C40A54264903A600C511E9 /* Alamofire.framework */,
+				00C40A56264903A600C511E9 /* Alamofire tvOS Tests.xctest */,
+				00C40A58264903A600C511E9 /* Alamofire.framework */,
+				00C40A5A264903A600C511E9 /* Alamofire watchOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C40A5E2649042C00C511E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00C40FD4264A05CA00C511E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				00C40FE9264A86C700C511E9 /* Message.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		00C40FED264A86D900C511E9 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				00C40FF0264A872600C511E9 /* MessageDelegate.swift */,
+				00BB2AFA264D070700F3FCE6 /* ProfileImgDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		00C41006264BA6E900C511E9 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				00BB2AFC264D232E00F3FCE6 /* Text.swift */,
+				00C40FB32649219F00C511E9 /* Http.swift */,
+				00BB2AFE264D488900F3FCE6 /* User.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00792DE92648C88E004D9BA3 /* PeacefulSprings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00792E142648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSprings" */;
+			buildPhases = (
+				00792DE62648C88E004D9BA3 /* Sources */,
+				00792DE72648C88E004D9BA3 /* Frameworks */,
+				00792DE82648C88E004D9BA3 /* Resources */,
+				00C40A612649042D00C511E9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeacefulSprings;
+			productName = PeacefulSprings;
+			productReference = 00792DEA2648C88E004D9BA3 /* PeacefulSprings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00792DFF2648C892004D9BA3 /* PeacefulSpringsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00792E172648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSpringsTests" */;
+			buildPhases = (
+				00792DFC2648C892004D9BA3 /* Sources */,
+				00792DFD2648C892004D9BA3 /* Frameworks */,
+				00792DFE2648C892004D9BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00792E022648C892004D9BA3 /* PBXTargetDependency */,
+			);
+			name = PeacefulSpringsTests;
+			productName = PeacefulSpringsTests;
+			productReference = 00792E002648C892004D9BA3 /* PeacefulSpringsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00792E0A2648C892004D9BA3 /* PeacefulSpringsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00792E1A2648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSpringsUITests" */;
+			buildPhases = (
+				00792E072648C892004D9BA3 /* Sources */,
+				00792E082648C892004D9BA3 /* Frameworks */,
+				00792E092648C892004D9BA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00792E0D2648C892004D9BA3 /* PBXTargetDependency */,
+			);
+			name = PeacefulSpringsUITests;
+			productName = PeacefulSpringsUITests;
+			productReference = 00792E0B2648C892004D9BA3 /* PeacefulSpringsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00792DE22648C88E004D9BA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					00792DE92648C88E004D9BA3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					00792DFF2648C892004D9BA3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 00792DE92648C88E004D9BA3;
+					};
+					00792E0A2648C892004D9BA3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 00792DE92648C88E004D9BA3;
+					};
+				};
+			};
+			buildConfigurationList = 00792DE52648C88E004D9BA3 /* Build configuration list for PBXProject "PeacefulSprings" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00792DE12648C88E004D9BA3;
+			productRefGroup = 00792DEB2648C88E004D9BA3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 00C40A39264903A500C511E9 /* Products */;
+					ProjectRef = 00C40A38264903A500C511E9 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				00792DE92648C88E004D9BA3 /* PeacefulSprings */,
+				00792DFF2648C892004D9BA3 /* PeacefulSpringsTests */,
+				00792E0A2648C892004D9BA3 /* PeacefulSpringsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		00C40A4C264903A600C511E9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 00C40A4B264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A4E264903A600C511E9 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 00C40A4D264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A50264903A600C511E9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 00C40A4F264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A52264903A600C511E9 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 00C40A51264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A54264903A600C511E9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 00C40A53264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A56264903A600C511E9 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 00C40A55264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A58264903A600C511E9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 00C40A57264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		00C40A5A264903A600C511E9 /* Alamofire watchOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire watchOS Tests.xctest";
+			remoteRef = 00C40A59264903A600C511E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00792DE82648C88E004D9BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C40FDE264A06DF00C511E9 /* images in Resources */,
+				00BB2B23264DEC4D00F3FCE6 /* appTextController.js in Resources */,
+				00BB2B2A264DEC4D00F3FCE6 /* DB_connection.js in Resources */,
+				00792DFA2648C892004D9BA3 /* LaunchScreen.storyboard in Resources */,
+				00792DF72648C892004D9BA3 /* Assets.xcassets in Resources */,
+				00BB2B21264DEC4D00F3FCE6 /* appUserController.js in Resources */,
+				00BB2B08264DEC4000F3FCE6 /* index.js in Resources */,
+				00792DF52648C88E004D9BA3 /* Main.storyboard in Resources */,
+				00BB2B05264DEC1000F3FCE6 /* server.js in Resources */,
+				00BB2B1E264DEC4D00F3FCE6 /* mysqlPool.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792DFE2648C892004D9BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792E092648C892004D9BA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00792DE62648C88E004D9BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00792DEE2648C88E004D9BA3 /* AppDelegate.swift in Sources */,
+				00BB2AF9264D03A200F3FCE6 /* ProfileImg.swift in Sources */,
+				00C4101C264CA66A00C511E9 /* LoginController.swift in Sources */,
+				00C40FB42649219F00C511E9 /* Http.swift in Sources */,
+				00C40FC8264927F600C511E9 /* ChatViewController.swift in Sources */,
+				00792DF02648C88E004D9BA3 /* SceneDelegate.swift in Sources */,
+				00C40FF1264A872600C511E9 /* MessageDelegate.swift in Sources */,
+				00BB2AFB264D070700F3FCE6 /* ProfileImgDelegate.swift in Sources */,
+				00C40FEA264A86C700C511E9 /* Message.swift in Sources */,
+				00BB2B01264D78FD00F3FCE6 /* Dictionarize.swift in Sources */,
+				00BB2AEF264CDC8B00F3FCE6 /* Signup.swift in Sources */,
+				00C4102E264CB5F500C511E9 /* PInfo.swift in Sources */,
+				00BB2AFD264D232E00F3FCE6 /* Text.swift in Sources */,
+				00BB2AFF264D488900F3FCE6 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792DFC2648C892004D9BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00792E052648C892004D9BA3 /* PeacefulSpringsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00792E072648C892004D9BA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00792E102648C892004D9BA3 /* PeacefulSpringsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00792E022648C892004D9BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00792DE92648C88E004D9BA3 /* PeacefulSprings */;
+			targetProxy = 00792E012648C892004D9BA3 /* PBXContainerItemProxy */;
+		};
+		00792E0D2648C892004D9BA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00792DE92648C88E004D9BA3 /* PeacefulSprings */;
+			targetProxy = 00792E0C2648C892004D9BA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00792DF32648C88E004D9BA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00792DF42648C88E004D9BA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00792DF82648C892004D9BA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00792DF92648C892004D9BA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00792E122648C892004D9BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00792E132648C892004D9BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00792E152648C892004D9BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSprings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSprings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00792E162648C892004D9BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSprings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSprings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00792E182648C892004D9BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSpringsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSpringsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacefulSprings.app/PeacefulSprings";
+			};
+			name = Debug;
+		};
+		00792E192648C892004D9BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSpringsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSpringsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeacefulSprings.app/PeacefulSprings";
+			};
+			name = Release;
+		};
+		00792E1B2648C892004D9BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSpringsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSpringsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeacefulSprings;
+			};
+			name = Debug;
+		};
+		00792E1C2648C892004D9BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeacefulSpringsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyang.PeacefulSpringsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeacefulSprings;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00792DE52648C88E004D9BA3 /* Build configuration list for PBXProject "PeacefulSprings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00792E122648C892004D9BA3 /* Debug */,
+				00792E132648C892004D9BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00792E142648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSprings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00792E152648C892004D9BA3 /* Debug */,
+				00792E162648C892004D9BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00792E172648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSpringsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00792E182648C892004D9BA3 /* Debug */,
+				00792E192648C892004D9BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00792E1A2648C892004D9BA3 /* Build configuration list for PBXNativeTarget "PeacefulSpringsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00792E1B2648C892004D9BA3 /* Debug */,
+				00792E1C2648C892004D9BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00792DE22648C88E004D9BA3 /* Project object */;
+}
