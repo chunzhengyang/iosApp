@@ -55,7 +55,7 @@
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<false/>
 		<key>UIImageName</key>
-		<string>blank</string>
+		<string>images/sz</string>
 	</dict>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

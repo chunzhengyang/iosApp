@@ -210,6 +210,7 @@
 		00792DEC2648C88E004D9BA3 /* PeacefulSprings */ = {
 			isa = PBXGroup;
 			children = (
+				00BB2B2C264E2D1500F3FCE6 /* controllers */,
 				00BB2B03264DE94C00F3FCE6 /* server */,
 				00BB2B02264DE5D900F3FCE6 /* protocol */,
 				00C41006264BA6E900C511E9 /* modal */,
@@ -223,11 +224,6 @@
 				00792DF62648C892004D9BA3 /* Assets.xcassets */,
 				00792DF82648C892004D9BA3 /* LaunchScreen.storyboard */,
 				00792DFB2648C892004D9BA3 /* Info.plist */,
-				00C40FC7264927F600C511E9 /* ChatViewController.swift */,
-				00C4101B264CA66A00C511E9 /* LoginController.swift */,
-				00C4102D264CB5F500C511E9 /* PInfo.swift */,
-				00BB2AEE264CDC8B00F3FCE6 /* Signup.swift */,
-				00BB2AF8264D03A200F3FCE6 /* ProfileImg.swift */,
 			);
 			path = PeacefulSprings;
 			sourceTree = "<group>";
@@ -309,6 +305,18 @@
 				00BB2B1D264DEC4D00F3FCE6 /* DB_connection.js */,
 			);
 			path = DBconfig;
+			sourceTree = "<group>";
+		};
+		00BB2B2C264E2D1500F3FCE6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00C40FC7264927F600C511E9 /* ChatViewController.swift */,
+				00C4101B264CA66A00C511E9 /* LoginController.swift */,
+				00C4102D264CB5F500C511E9 /* PInfo.swift */,
+				00BB2AEE264CDC8B00F3FCE6 /* Signup.swift */,
+				00BB2AF8264D03A200F3FCE6 /* ProfileImg.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		00C40A39264903A500C511E9 /* Products */ = {
